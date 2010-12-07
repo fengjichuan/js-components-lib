@@ -1,0 +1,95 @@
+body{
+	height:800px;
+	margin:0px;
+	padding:0px;
+}
+.dialog_box {
+	position:relative;
+	z-index:9999;
+	left:0px;
+	top:0px;
+	width:auto;
+	height:auto;
+	padding-bottom: 10px;	
+	background-color:white;
+	border: solid 5px #999;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.dialog_box .alert_icon{
+	background:url('alert.gif') no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.dialog_box .confirm_icon{
+	background:url('confirm.gif') no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.dialog_box .prompt_icon{
+	background:url('prompt.gif') no-repeat;
+	width:32px;
+	height:32px; 
+	display:block;
+} 	
+.dialog_box .title {
+	background-color:#cccccc;
+	background:url('bar.gif') repeat-x;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #999999;
+	height: 23px;
+	line-height: 23px;
+	color: white;
+	cursor: move;
+}
+.dialog_box .title_con {
+	color: #666666;
+	font-size: 14px;
+	font-weight: bold;
+	float:left;
+	width:auto;
+	text-align:left;
+	padding:0px 0px 0px 16px;
+}
+.dialog_box .alert_content {
+	margin: 6px 10px;
+	min-height: 35px;
+}
+.dialog_box .alert_content div {
+	float: left;
+	margin: 3px 8px;
+	line-height: 20px;
+}
+.dialog_box .alert_content .ico {
+	width: 40px;
+}
+.dialog_box .alert_content .con {
+	width: 190px;
+	height: auto;
+}
+.dialog_box .alert_button {	 
+	clear: both; 
+	text-align: center;
+}
+.dialog_box .alert_button  input {
+	height: 25px;
+	width: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+.dialog_box .confirm_button {	 
+	clear: both; 
+	text-align: center;
+}
+.dialog_box .confirm_button input {
+	height: 25px;
+	width: 80px;
+	text-align: center;
+	margin:0px 12px;
+}

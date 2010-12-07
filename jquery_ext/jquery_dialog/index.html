@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="images/style.css" />
+	</head>
+	<body>
+		<div>test...<br /><br /><br /></div>
+		<div>test...<br /><br /><br /></div>
+		<div>test...<br /><br /><br /></div>
+		<div>test...<br /><br /><br /></div>
+		<button> alert </button>
+		<button> confirm </button>
+		<button> prompt </button>
+	</body>
+	<script src="js/jquery-1.4.3.js"></script>
+	<script src="js/jquery.event.drag.js"></script>
+	<script src="js/class.js"></script>
+	<script src="js/maildialog.js"></script>
+	<script>
+		(function() {
+			$('button').each(function(index) {
+				index == 0 ? 
+				$(this).bind('click', function(event) {
+					mailDialog.alert({
+						click: function(event) {
+							alert('你点击了确定按钮');
+						}
+					});
+				}) : index == 1 ? 
+				$(this).bind('click', function(event) {
+					mailDialog.confirm({
+						click: function(event) {
+							alert('你点击了确定按钮');
+						},
+						cancelclick: function(event) {
+							alert('你点击了取消按钮');
+						}
+					});
+				}) : index == 2 ? 
+				$(this).bind('click', function(event) {
+					mailDialog.prompt({
+						click: function(value, event) {
+							alert('你点击了确定按钮\n输入框中的值为:' + value);
+						},
+						cancelclick: function(value, event) {
+							alert('你点击了取消按钮\n输入框中的值为:' + value);
+						}
+					});
+				}) : null;
+			});
+		})();
+	</script>
+</html>

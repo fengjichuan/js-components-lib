@@ -1,0 +1,168 @@
+.bf-editor{
+  width:600px;
+  border:1px solid #9a9a9a;
+}
+
+/* 去除A标签的虚线 */
+.bf-editor a{
+  outline:none;
+  text-decoration:none;
+  font-size:12px;
+}
+
+.bf-editor .toolbar{
+  height:32px;
+  border-bottom:1px solid #9a9a9a;
+  background:url('editor_bar.jpg') repeat-x;
+  position:relative;
+}
+
+.bf-editor .toolbar .item{
+  background-image: url('editor_bt.gif');
+  background-repeat: no-repeat;
+  width:24px;
+  height:24px;
+  margin:4px 0;
+  display:block;
+  float:left;
+}
+
+.bf-editor .toolbar .item-border{
+  /*border:1px solid transparent;*/
+  padding:1px;
+}
+
+.bf-editor .toolbar .item-focus{
+  background-color:#fff;
+  border-left: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding:0px;
+}
+.bf-editor .toolbar .item-press{
+  border-left: 1px solid #999999;
+  border-top: 1px solid #999999;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.bf-editor .toolbar .bold{
+  background-position: -4px 2px;
+}
+.bf-editor .toolbar .bold-press{
+  background-position: -3px 3px;
+}
+
+.bf-editor .toolbar .italic{
+  background-position: -44px 2px;
+}
+.bf-editor .toolbar .italic-press{
+  background-position: -43px 3px;
+}
+
+.bf-editor .toolbar .underline{
+  background-position: -84px 2px;
+}
+.bf-editor .toolbar .underline-press{
+  background-position: -83px 3px;
+}
+
+.bf-editor .toolbar .justifyleft{
+  background-position: -127px 2px;
+}
+.bf-editor .toolbar .justifyleft-press{
+  background-position: -126px 3px;
+}
+
+.bf-editor .toolbar .justifycenter{
+  background-position: -167px 2px;
+}
+.bf-editor .toolbar .justifycenter-press{
+  background-position: -166px 3px;
+}
+
+.bf-editor .toolbar .justifyright{
+  background-position: -207px 2px;
+}
+.bf-editor .toolbar .justifyright-press{
+  background-position: -206px 3px;
+}
+
+.bf-editor .toolbar .insertorderedlist{
+  background-position: -247px 2px;
+}
+.bf-editor .toolbar .insertorderedlist-press{
+  background-position: -246px 3px;
+}
+
+.bf-editor .toolbar .insertunorderedlist{
+  background-position: -287px 2px;
+}
+.bf-editor .toolbar .insertunorderedlist-press{
+  background-position: -286px 3px;
+}
+
+.bf-editor .toolbar .createlink{
+  background-position: -327px 2px;
+}
+.bf-editor .toolbar .createlink-press{
+  background-position: -326px 3px;
+}
+
+.bf-editor .toolbar .insertimage{
+  background-position: -367px 2px;
+}
+.bf-editor .toolbar .insertimage-press{
+  background-position: -366px 3px;
+}
+
+.bf-editor .toolbar .forecolor{
+  background-position: -407px 2px;
+}
+.bf-editor .toolbar .forecolor-press{
+  background-position: -406px 3px;
+}
+
+.bf-editor .toolbar .backcolor{
+  background-position: -467px 2px;
+}
+.bf-editor .toolbar .backcolor-press{
+  background-position: -466px 3px;
+}
+
+.bf-editor .toolbar .insertface{
+  background-position: -507px 2px;
+}
+.bf-editor .toolbar .insertface-press{
+  background-position: -506px 3px;
+}
+
+.bf-editor .toolbar .sprtspace{
+  width:6px;
+  height:30px;
+  display:block;
+  float:left;
+}
+
+.bf-editor .toolbar .sprtline{
+  background-image: url('editor_bt.gif');
+  background-position: -443px 0;
+  width:16px;
+  height:20px;
+  margin:5px 0;
+  display:block;
+  float:left;
+}
+
+.bf-editor .container{
+  width:100%;
+  height:500px;
+  border-top:1px solid #fff;
+}
+/*
+*html .bf-editor .container{
+  border-top-color: pink;
+  filter: chroma(color=pink);
+}
+*/
