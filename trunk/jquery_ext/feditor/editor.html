@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="images/editor.css" media="all" />
+  </head>
+  <body>
+    <div class="bf-editor">
+      <div id="editor_toolbar" class="toolbar">
+        <span class="sprtspace"></span>
+        <a href="javascript:;" hidefocus="true" ename="Bold" class="item bold item-border" title="加粗"></a>
+        <a href="javascript:;" hidefocus="true" ename="Italic" class="item italic item-border" title="斜体"></a>
+        <a href="javascript:;" hidefocus="true" ename="Underline" class="item underline item-border" title="下划线"></a>
+        
+        <span class="sprtline">&nbsp;</span>
+        
+        <a href="javascript:;" hidefocus="true" ename="fontname" class="item-border" style="width:40px;height:20px;text-align:center;float:left;margin:4px;line-height:20px;color:#333;background-color:#dcdcdc;"> 字 体 </a>
+        <a href="javascript:;" hidefocus="true" ename="fontsize" class="item-border" style="width:40px;height:20px;text-align:center;float:left;margin:4px;line-height:20px;color:#333;background-color:#dcdcdc;"> 字 号 </a>
+        
+        <a href="javascript:;" hidefocus="true" ename="forecolor" class="item forecolor item-border" title="字体颜色"></a>
+        
+        <a href="javascript:;" hidefocus="true" ename="backcolor" class="item backcolor item-border" title="背景颜色"></a>
+        
+        <span class="sprtline">&nbsp;</span>
+        
+        <a href="javascript:;" hidefocus="true" ename="justifyLeft" class="item justifyleft item-border" title="左对齐"></a>
+        <a href="javascript:;" hidefocus="true" ename="justifyCenter" class="item justifycenter item-border" title="居中"></a>
+        <a href="javascript:;" hidefocus="true" ename="justifyRight" class="item justifyright item-border" title="右对齐"></a>
+        
+        <span class="sprtline"></span>
+        
+        <a href="javascript:;" hidefocus="true" ename="insertOrderedList" class="item insertorderedlist item-border" title="数字列表"></a>
+        <a href="javascript:;" hidefocus="true" ename="insertUnorderedList" class="item insertunorderedlist item-border" title="列表"></a>
+        
+        <span class="sprtline"></span>
+        
+        <a href="javascript:;" hidefocus="true" ename="createlink" class="item createlink item-border" title="插入超链接"></a>
+        <a href="javascript:;" hidefocus="true" ename="insertimage" class="item insertimage item-border" title="插入图片"></a>
+        <a href="javascript:;" hidefocus="true" ename="insertface" class="item insertface item-border" title="插入表情"></a>
+        
+        <!-- <a style="margin-left:40px;" href="javascript:;" onclick="alert(BF_editor.getContent());return false;">查看内容</a> -->
+      </div>
+      <div id="editor_content" class="container">
+      </div>
+    </div>
+    
+    <div><button onclick="alert(feditor.editor.getContent());"> 获取内容 </button></div>
+    <div><input id="test_input_area" type="text" value="" /><button onclick="feditor.editor.setContent(document.getElementById('test_input_area').value);"> 设置内容 </button></div>
+    
+  </body>
+  <script src="jquery.js"></script>
+  <script src="editor.js"></script>
+</html>
