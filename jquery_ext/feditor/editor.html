@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="images/editor.css" media="all" />
   </head>
   <body>
+    <div class="right-cont" style="position:relative;">
     <div class="bf-editor">
       <div id="editor_toolbar" class="toolbar">
         <span class="sprtspace"></span>
@@ -38,16 +39,14 @@
         <a href="javascript:;" hidefocus="true" ename="insertimage" class="item insertimage item-border" title="插入图片"></a>
         <a href="javascript:;" hidefocus="true" ename="insertface" class="item insertface item-border" title="插入表情"></a>
         
-        <!-- <a style="margin-left:40px;" href="javascript:;" onclick="alert(BF_editor.getContent());return false;">查看内容</a> -->
       </div>
-      <div id="editor_content" class="container">
+      <div id="editmailEditor" class="container">
       </div>
     </div>
-    
-    <div><button onclick="alert(feditor.editor.getContent());"> 获取内容 </button></div>
-    <div><input id="test_input_area" type="text" value="" /><button onclick="feditor.editor.setContent(document.getElementById('test_input_area').value);"> 设置内容 </button></div>
+    </div>
     
   </body>
   <script src="jquery.js"></script>
   <script src="editor.js"></script>
+  
 </html>
